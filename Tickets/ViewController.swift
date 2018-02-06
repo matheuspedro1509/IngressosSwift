@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imgBanner: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.imgBanner.layer.cornerRadius = 10
+        self.imgBanner.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
