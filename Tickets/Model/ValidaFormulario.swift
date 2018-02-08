@@ -51,6 +51,13 @@ class ValidaFormulario: NSObject {
             }
         }
         guard let cpf = dicionarioTextField [.cpf] , BooleanValidator().validate(cpf: cpf.text!)  else{ return false}
+        guard let email = dicionarioTextField [.email], verificaEmail(email: email.text!) else { return false}
         return true
+    }
+    
+    func verificaEmail(email : String ) -> Bool{
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES[c] %@", emailRegEx)
+        return emailTest.evaluate(with: email)
     }
 }
