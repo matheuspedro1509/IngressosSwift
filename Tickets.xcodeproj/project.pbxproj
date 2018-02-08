@@ -13,9 +13,11 @@
 		71BAFA362029E00A00D3073E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA342029E00A00D3073E /* Main.storyboard */; };
 		71BAFA382029E00B00D3073E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA372029E00B00D3073E /* Assets.xcassets */; };
 		71BAFA3B2029E00B00D3073E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA392029E00B00D3073E /* LaunchScreen.storyboard */; };
+		CAF6FB502E3DA73557462187 /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1030930655C79441175D7940 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 		718FE658202C836400926269 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
 		71BAFA2D2029E00A00D3073E /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA302029E00A00D3073E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		71BAFA372029E00B00D3073E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BAFA3A2029E00B00D3073E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71BAFA3C2029E00B00D3073E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDF4B81DD65C98BA4973BD4 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF6FB502E3DA73557462187 /* Pods_Tickets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412A0AB6362DD5F0D74232B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E88C6EAC4B05A4B610A23F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBDF4B81DD65C98BA4973BD4 /* Pods-Tickets.debug.xcconfig */,
+				1030930655C79441175D7940 /* Pods-Tickets.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		718FE656202C829700926269 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +80,8 @@
 			children = (
 				71BAFA2F2029E00A00D3073E /* Tickets */,
 				71BAFA2E2029E00A00D3073E /* Products */,
+				6E88C6EAC4B05A4B610A23F1 /* Pods */,
+				412A0AB6362DD5F0D74232B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71BAFA3F2029E00B00D3073E /* Build configuration list for PBXNativeTarget "Tickets" */;
 			buildPhases = (
+				04195E9DD3EDC7CFB296080B /* [CP] Check Pods Manifest.lock */,
 				71BAFA292029E00A00D3073E /* Sources */,
 				71BAFA2A2029E00A00D3073E /* Frameworks */,
 				71BAFA2B2029E00A00D3073E /* Resources */,
+				F80E31B72EE796F62144B3B8 /* [CP] Embed Pods Frameworks */,
+				46FD04C26B671D94F436F541 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04195E9DD3EDC7CFB296080B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tickets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46FD04C26B671D94F436F541 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80E31B72EE796F62144B3B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71BAFA292029E00A00D3073E /* Sources */ = {
@@ -292,6 +370,7 @@
 		};
 		71BAFA402029E00B00D3073E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDF4B81DD65C98BA4973BD4 /* Pods-Tickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +385,7 @@
 		};
 		71BAFA412029E00B00D3073E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1030930655C79441175D7940 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
