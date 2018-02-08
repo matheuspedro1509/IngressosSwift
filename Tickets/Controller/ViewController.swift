@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.imgBanner.layer.cornerRadius = 10
         self.imgBanner.layer.masksToBounds = true
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,8 +31,9 @@ class ViewController: UIViewController {
 
     @IBAction func botaoComprar(_ sender: UIButton) {
         let textFieldPreenchidos = ValidaFormulario().verificaTextField(textFields: textFields)
+        let textFieldValidos = ValidaFormulario().verificaTextFieldsValidos(textFields: textFields)
         
-        if (textFieldPreenchidos){
+        if (textFieldPreenchidos && textFieldValidos){
             let alerta = ValidaFormulario().exibeNotificacao(titulo: "Parabens", mensagem: "Compra realizada com sucesso")
             present(alerta, animated: true, completion: nil)
         }else{
