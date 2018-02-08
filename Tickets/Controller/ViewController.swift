@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var imgBanner: UIImageView!
@@ -41,6 +42,12 @@ class ViewController: UIViewController {
             present(alerta, animated: true, completion: nil)
         }
     }
+   
+    @IBAction func textFieldCep(_ sender: Any) {
+        
+    
+    }
+    
     
 }
 

@@ -7,5 +7,6 @@ target 'Tickets' do
 
   # Pods for Tickets
 pod 'CPF-CNPJ-Validator', '~> 1.0'
+pod 'Alamofire', '~> 4.5'
 
 end
