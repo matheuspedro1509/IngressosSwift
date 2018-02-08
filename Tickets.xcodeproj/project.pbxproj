@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718FE659202C836400926269 /* ValidaFormulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718FE658202C836400926269 /* ValidaFormulario.swift */; };
 		71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFA302029E00A00D3073E /* AppDelegate.swift */; };
 		71BAFA332029E00A00D3073E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFA322029E00A00D3073E /* ViewController.swift */; };
 		71BAFA362029E00A00D3073E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA342029E00A00D3073E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		718FE658202C836400926269 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
 		71BAFA2D2029E00A00D3073E /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA302029E00A00D3073E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71BAFA322029E00A00D3073E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		718FE656202C829700926269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				718FE658202C836400926269 /* ValidaFormulario.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		718FE657202C82A600926269 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFA322029E00A00D3073E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		71BAFA242029E00900D3073E = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				71BAFA302029E00A00D3073E /* AppDelegate.swift */,
-				71BAFA322029E00A00D3073E /* ViewController.swift */,
+				718FE656202C829700926269 /* Model */,
+				718FE657202C82A600926269 /* Controller */,
 				71BAFA342029E00A00D3073E /* Main.storyboard */,
 				71BAFA372029E00B00D3073E /* Assets.xcassets */,
 				71BAFA392029E00B00D3073E /* LaunchScreen.storyboard */,
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71BAFA332029E00A00D3073E /* ViewController.swift in Sources */,
+				718FE659202C836400926269 /* ValidaFormulario.swift in Sources */,
 				71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

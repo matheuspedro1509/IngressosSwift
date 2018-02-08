@@ -109,7 +109,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-Ow-ZPr">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-Ow-ZPr">
                                                 <rect key="frame" x="0.0" y="278" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -197,6 +197,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="numero do cartão" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8MV-wr-wFw">
                                                 <rect key="frame" x="0.0" y="699.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MQA-Qi-Ds8">
@@ -290,6 +291,9 @@
                                                 <state key="normal" title="Comprar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="botaoComprar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6S-Vg-eUa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -323,6 +327,17 @@
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="imgBanner" destination="JNj-fT-8qz" id="YvM-Li-qir"/>
+                        <outletCollection property="textFields" destination="KeF-Ow-ZPr" collectionClass="NSMutableArray" id="8s4-FU-7wp"/>
+                        <outletCollection property="textFields" destination="D73-Ej-8qD" collectionClass="NSMutableArray" id="AZF-Rz-DmT"/>
+                        <outletCollection property="textFields" destination="hXV-iQ-Gg7" collectionClass="NSMutableArray" id="5Yu-gg-gDj"/>
+                        <outletCollection property="textFields" destination="tOp-4t-RJW" collectionClass="NSMutableArray" id="ISv-t8-Aff"/>
+                        <outletCollection property="textFields" destination="412-rM-eJd" collectionClass="NSMutableArray" id="rz2-rz-Cgh"/>
+                        <outletCollection property="textFields" destination="8uy-T2-vSA" collectionClass="NSMutableArray" id="hsj-Ay-u9Q"/>
+                        <outletCollection property="textFields" destination="8MV-wr-wFw" collectionClass="NSMutableArray" id="CKS-L1-ZJf"/>
+                        <outletCollection property="textFields" destination="ysB-vQ-LVq" collectionClass="NSMutableArray" id="asn-R7-t0Z"/>
+                        <outletCollection property="textFields" destination="BhR-tp-RcN" collectionClass="NSMutableArray" id="blc-qV-vh1"/>
+                        <outletCollection property="textFields" destination="U4h-dj-RSK" collectionClass="NSMutableArray" id="Hl9-T9-XbG"/>
+                        <outletCollection property="textFields" destination="Lic-qE-gu7" collectionClass="NSMutableArray" id="yD3-hH-lhL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
