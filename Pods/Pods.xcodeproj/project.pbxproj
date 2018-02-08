@@ -7,39 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09271A25CC2137BCEE0A0B68239EFC32 /* Pods-Tickets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C2E78A8B710681A22F808A304A8BC /* Pods-Tickets-dummy.m */; };
-		B668BB5990D051771A22A8648DFCDDEF /* Pods-Tickets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 514D45F4231287B20AF8EE98B60B33BF /* Pods-Tickets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCBA414748A68E3E42B13D6F7451780A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1E421D3C1101EC0239385B2DE1993FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1F78F7B2963F23791A9CB16B0E629B7A /* Pods-Tickets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C2E78A8B710681A22F808A304A8BC /* Pods-Tickets-dummy.m */; };
+		4F9FF4C69497DDE64B66F347F052EBE7 /* CPF-CNPJ-Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BE045D5859A4476CFED998233DABB /* CPF-CNPJ-Validator.swift */; };
+		91DD3BD2EE7A72E7B006EC5D187CC4A5 /* CPF-CNPJ-Validator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FAF7F6C68B6B3DAB20208D8DD9298 /* CPF-CNPJ-Validator-dummy.m */; };
+		B42DE7B2389FA1A0E7146060F813825D /* CPF-CNPJ-Validator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7F7C2251989C42379F7F2291873812 /* CPF-CNPJ-Validator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1A7B96686930790C09B52950E4DA0DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EE96D73A9C318C59A0324CFC755909CC /* Pods-Tickets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 514D45F4231287B20AF8EE98B60B33BF /* Pods-Tickets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BF50DBA3181A2409DF1A361D97B3A318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9145C4D0C159FD131E3B087886089CC2;
+			remoteInfo = "CPF-CNPJ-Validator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1087052DF8C3050E700973942DFF51ED /* CPF-CNPJ-Validator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPF-CNPJ-Validator-prefix.pch"; sourceTree = "<group>"; };
+		126BE045D5859A4476CFED998233DABB /* CPF-CNPJ-Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CPF-CNPJ-Validator.swift"; path = "Source/CPF-CNPJ-Validator.swift"; sourceTree = "<group>"; };
+		191DA3A89794E3A8EED091DE3D78ED97 /* CPF-CNPJ-Validator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "CPF-CNPJ-Validator.modulemap"; sourceTree = "<group>"; };
 		329E6D55662E1EEAFC0DAC6CD06B52B7 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
+		3933B10CADF1325D626FF121CF116A8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E9DD1C929323B85C7632DAE142A05DB /* Pods-Tickets-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tickets-acknowledgements.markdown"; sourceTree = "<group>"; };
 		429E04160C4E52810E4B2D38CD5A9D62 /* Pods-Tickets-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tickets-resources.sh"; sourceTree = "<group>"; };
 		514D45F4231287B20AF8EE98B60B33BF /* Pods-Tickets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tickets-umbrella.h"; sourceTree = "<group>"; };
-		562EC79CD62E4650B859B6060D547726 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tickets.framework; path = "Pods-Tickets.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C9FAF7F6C68B6B3DAB20208D8DD9298 /* CPF-CNPJ-Validator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CPF-CNPJ-Validator-dummy.m"; sourceTree = "<group>"; };
 		790C2E78A8B710681A22F808A304A8BC /* Pods-Tickets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tickets-dummy.m"; sourceTree = "<group>"; };
 		88E0058ED7D98D57E7ACD165E8AF1AE6 /* Pods-Tickets-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tickets-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A04732DC9325D3E69484161A82D56C37 /* CPF-CNPJ-Validator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CPF-CNPJ-Validator.xcconfig"; sourceTree = "<group>"; };
+		AC7F7C2251989C42379F7F2291873812 /* CPF-CNPJ-Validator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPF-CNPJ-Validator-umbrella.h"; sourceTree = "<group>"; };
 		B1A2008CD8D02003FB256528EDE5EAE8 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
 		B6BD7BA5B987EBBF1C72B160A46904C9 /* Pods-Tickets-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tickets-frameworks.sh"; sourceTree = "<group>"; };
+		CDE73DAEC1986C234510C88A702EFC34 /* CPF_CNPJ_Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CPF_CNPJ_Validator.framework; path = "CPF-CNPJ-Validator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D003F4E2480116F986472491903865F3 /* Pods-Tickets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tickets.modulemap"; sourceTree = "<group>"; };
 		D52D3C7AD4A94EA55B978167BE51913A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4EC121443EDFC6AEAF433330DB45505 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tickets.framework; path = "Pods-Tickets.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE572B90711F6D678667DEC90FB12B97 /* Frameworks */ = {
+		271B276914FA06497F0E1F6CC7F26079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCBA414748A68E3E42B13D6F7451780A /* Foundation.framework in Frameworks */,
+				C1A7B96686930790C09B52950E4DA0DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06FC78C427865FBC82CFD3CDBCFB4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E421D3C1101EC0239385B2DE1993FF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6330519B7DBC39DA6F16DBA2110233E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE73DAEC1986C234510C88A702EFC34 /* CPF_CNPJ_Validator.framework */,
+				E4EC121443EDFC6AEAF433330DB45505 /* Pods_Tickets.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DABED40F89A34017C291472AABA9625 /* Pods-Tickets */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +102,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EB8E37D09970F06A0CA9C2972A98B78A /* Products */,
+				B55144E4AC21D875D55052A71B1FEB30 /* Pods */,
+				6330519B7DBC39DA6F16DBA2110233E4 /* Products */,
 				8ECC82852553EE8B367E3FA11E5BD3B0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +114,14 @@
 				7DABED40F89A34017C291472AABA9625 /* Pods-Tickets */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B55144E4AC21D875D55052A71B1FEB30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB687047513EEC05704AC149A7992C85 /* CPF-CNPJ-Validator */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -92,43 +140,85 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EB8E37D09970F06A0CA9C2972A98B78A /* Products */ = {
+		DB687047513EEC05704AC149A7992C85 /* CPF-CNPJ-Validator */ = {
 			isa = PBXGroup;
 			children = (
-				562EC79CD62E4650B859B6060D547726 /* Pods_Tickets.framework */,
+				126BE045D5859A4476CFED998233DABB /* CPF-CNPJ-Validator.swift */,
+				E2ABDB7CD1E21218FFE82A2A4B9755A7 /* Support Files */,
 			);
-			name = Products;
+			name = "CPF-CNPJ-Validator";
+			path = "CPF-CNPJ-Validator";
+			sourceTree = "<group>";
+		};
+		E2ABDB7CD1E21218FFE82A2A4B9755A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				191DA3A89794E3A8EED091DE3D78ED97 /* CPF-CNPJ-Validator.modulemap */,
+				A04732DC9325D3E69484161A82D56C37 /* CPF-CNPJ-Validator.xcconfig */,
+				6C9FAF7F6C68B6B3DAB20208D8DD9298 /* CPF-CNPJ-Validator-dummy.m */,
+				1087052DF8C3050E700973942DFF51ED /* CPF-CNPJ-Validator-prefix.pch */,
+				AC7F7C2251989C42379F7F2291873812 /* CPF-CNPJ-Validator-umbrella.h */,
+				3933B10CADF1325D626FF121CF116A8E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CPF-CNPJ-Validator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		197B5A4F66EC33079970ADA1699DCF70 /* Headers */ = {
+		ACE4EE599A534F544D09D6469C860A5C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B668BB5990D051771A22A8648DFCDDEF /* Pods-Tickets-umbrella.h in Headers */,
+				EE96D73A9C318C59A0324CFC755909CC /* Pods-Tickets-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE0C291176E9839D8DF1E2AA460E9BDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42DE7B2389FA1A0E7146060F813825D /* CPF-CNPJ-Validator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		85D790A7015E4F39F42FE6862D1863A4 /* Pods-Tickets */ = {
+		1FBD8AC920B09B42DB05E4B606204220 /* Pods-Tickets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF365C45CA400D5EAAD49DE30CD57C23 /* Build configuration list for PBXNativeTarget "Pods-Tickets" */;
+			buildConfigurationList = 6B2EA123935EAF0E711EDC2AB4C3B5D4 /* Build configuration list for PBXNativeTarget "Pods-Tickets" */;
 			buildPhases = (
-				9289E03A81CD8A42D72CC8BFEDCDE8CD /* Sources */,
-				CE572B90711F6D678667DEC90FB12B97 /* Frameworks */,
-				197B5A4F66EC33079970ADA1699DCF70 /* Headers */,
+				62A327BE265321C8A3C4EB8732172EBE /* Sources */,
+				D06FC78C427865FBC82CFD3CDBCFB4EF /* Frameworks */,
+				ACE4EE599A534F544D09D6469C860A5C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A5C6DD4E582098095E4A52A8903E72 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tickets";
+			productName = "Pods-Tickets";
+			productReference = E4EC121443EDFC6AEAF433330DB45505 /* Pods_Tickets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9145C4D0C159FD131E3B087886089CC2 /* CPF-CNPJ-Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2C7FAA73EBC1EDFD28095C684337A7F /* Build configuration list for PBXNativeTarget "CPF-CNPJ-Validator" */;
+			buildPhases = (
+				0FB4077069A024BD1A3F1E1579C25F72 /* Sources */,
+				271B276914FA06497F0E1F6CC7F26079 /* Frameworks */,
+				DE0C291176E9839D8DF1E2AA460E9BDB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Tickets";
-			productName = "Pods-Tickets";
-			productReference = 562EC79CD62E4650B859B6060D547726 /* Pods_Tickets.framework */;
+			name = "CPF-CNPJ-Validator";
+			productName = "CPF-CNPJ-Validator";
+			productReference = CDE73DAEC1986C234510C88A702EFC34 /* CPF_CNPJ_Validator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +238,144 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EB8E37D09970F06A0CA9C2972A98B78A /* Products */;
+			productRefGroup = 6330519B7DBC39DA6F16DBA2110233E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85D790A7015E4F39F42FE6862D1863A4 /* Pods-Tickets */,
+				9145C4D0C159FD131E3B087886089CC2 /* CPF-CNPJ-Validator */,
+				1FBD8AC920B09B42DB05E4B606204220 /* Pods-Tickets */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9289E03A81CD8A42D72CC8BFEDCDE8CD /* Sources */ = {
+		0FB4077069A024BD1A3F1E1579C25F72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09271A25CC2137BCEE0A0B68239EFC32 /* Pods-Tickets-dummy.m in Sources */,
+				91DD3BD2EE7A72E7B006EC5D187CC4A5 /* CPF-CNPJ-Validator-dummy.m in Sources */,
+				4F9FF4C69497DDE64B66F347F052EBE7 /* CPF-CNPJ-Validator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A327BE265321C8A3C4EB8732172EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F78F7B2963F23791A9CB16B0E629B7A /* Pods-Tickets-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B1A5C6DD4E582098095E4A52A8903E72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CPF-CNPJ-Validator";
+			target = 9145C4D0C159FD131E3B087886089CC2 /* CPF-CNPJ-Validator */;
+			targetProxy = BF50DBA3181A2409DF1A361D97B3A318 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		076ECEF65BA6D85B7942A2FBB58CB97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04732DC9325D3E69484161A82D56C37 /* CPF-CNPJ-Validator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CPF-CNPJ-Validator/CPF-CNPJ-Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CPF-CNPJ-Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CPF-CNPJ-Validator/CPF-CNPJ-Validator.modulemap";
+				PRODUCT_NAME = CPF_CNPJ_Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2480D13B10D0B186B495BB64F1C89DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04732DC9325D3E69484161A82D56C37 /* CPF-CNPJ-Validator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CPF-CNPJ-Validator/CPF-CNPJ-Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CPF-CNPJ-Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CPF-CNPJ-Validator/CPF-CNPJ-Validator.modulemap";
+				PRODUCT_NAME = CPF_CNPJ_Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		316F69BA2CD4DB03E3C41DD2FC2C2DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A2008CD8D02003FB256528EDE5EAE8 /* Pods-Tickets.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tickets/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tickets/Pods-Tickets.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tickets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -232,7 +439,7 @@
 			};
 			name = Debug;
 		};
-		40585F8144A69C0B236B2B9B522AA812 /* Release */ = {
+		4A66CFED61BC21F5042C6DD283BF3CBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 329E6D55662E1EEAFC0DAC6CD06B52B7 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
@@ -259,45 +466,13 @@
 				PRODUCT_NAME = Pods_Tickets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		A559CE56543BF92C288A87A6F36A7A2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1A2008CD8D02003FB256528EDE5EAE8 /* Pods-Tickets.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Tickets/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Tickets/Pods-Tickets.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Tickets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CA33F186435244FD0FD5B7325332656C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -369,11 +544,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF365C45CA400D5EAAD49DE30CD57C23 /* Build configuration list for PBXNativeTarget "Pods-Tickets" */ = {
+		6B2EA123935EAF0E711EDC2AB4C3B5D4 /* Build configuration list for PBXNativeTarget "Pods-Tickets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A559CE56543BF92C288A87A6F36A7A2A /* Debug */,
-				40585F8144A69C0B236B2B9B522AA812 /* Release */,
+				316F69BA2CD4DB03E3C41DD2FC2C2DAB /* Debug */,
+				4A66CFED61BC21F5042C6DD283BF3CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2C7FAA73EBC1EDFD28095C684337A7F /* Build configuration list for PBXNativeTarget "CPF-CNPJ-Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2480D13B10D0B186B495BB64F1C89DFB /* Debug */,
+				076ECEF65BA6D85B7942A2FBB58CB97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

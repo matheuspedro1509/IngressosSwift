@@ -6,5 +6,6 @@ target 'Tickets' do
   use_frameworks!
 
   # Pods for Tickets
+pod 'CPF-CNPJ-Validator', '~> 1.0'
 
 end
