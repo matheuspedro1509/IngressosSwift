@@ -8,6 +8,7 @@
 
 import UIKit
 import CPF_CNPJ_Validator
+import CreditCardValidator
 
 
 enum TipoTextField: Int {
@@ -52,6 +53,7 @@ class ValidaFormulario: NSObject {
         }
         guard let cpf = dicionarioTextField [.cpf] , BooleanValidator().validate(cpf: cpf.text!)  else{ return false}
         guard let email = dicionarioTextField [.email], verificaEmail(email: email.text!) else { return false}
+        guard let numeroCartao = dicionarioTextField[.numeroCartao], CreditCardValidator().validate(string: numeroCartao.text!) else { return false }
         return true
     }
     
