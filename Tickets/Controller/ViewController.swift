@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+
 
 
 class ViewController: UIViewController {
@@ -43,9 +43,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func textFieldCep(_ sender: UITextField) {
-        Alamofire.request("https://viacep.com.br/ws/04101300/json/", method: .get).validate().responseJSON { (response) in
-            print(response)
-        }
+      
     }
     
     

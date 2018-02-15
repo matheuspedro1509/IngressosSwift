@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718A533E2035B7A000A89B10 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A533D2035B79F00A89B10 /* Localizacao.swift */; };
+		718A53402035B7EE00A89B10 /* LocalizacaoConsultaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A533F2035B7EE00A89B10 /* LocalizacaoConsultaApi.swift */; };
 		718FE659202C836400926269 /* ValidaFormulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718FE658202C836400926269 /* ValidaFormulario.swift */; };
 		71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFA302029E00A00D3073E /* AppDelegate.swift */; };
 		71BAFA332029E00A00D3073E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFA322029E00A00D3073E /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		1030930655C79441175D7940 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
+		718A533D2035B79F00A89B10 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
+		718A533F2035B7EE00A89B10 /* LocalizacaoConsultaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoConsultaApi.swift; sourceTree = "<group>"; };
 		718FE658202C836400926269 /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = "<group>"; };
 		71BAFA2D2029E00A00D3073E /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA302029E00A00D3073E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				718FE658202C836400926269 /* ValidaFormulario.swift */,
+				718A533D2035B79F00A89B10 /* Localizacao.swift */,
+				718A533F2035B7EE00A89B10 /* LocalizacaoConsultaApi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71BAFA332029E00A00D3073E /* ViewController.swift in Sources */,
+				718A53402035B7EE00A89B10 /* LocalizacaoConsultaApi.swift in Sources */,
 				718FE659202C836400926269 /* ValidaFormulario.swift in Sources */,
+				718A533E2035B7A000A89B10 /* Localizacao.swift in Sources */,
 				71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
