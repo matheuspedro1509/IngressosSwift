@@ -37,14 +37,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vv-AG-tIa">
                                 <rect key="frame" x="0.0" y="20" width="375" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-6a-Vyu">
-                                        <rect key="frame" x="106" y="25" width="163" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-6a-Vyu">
+                                        <rect key="frame" x="105" y="25" width="165" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="bgI-IJ-Hct"/>
+                                            <constraint firstAttribute="height" constant="50" id="fCd-ZC-oDc"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22129840835376532" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Y5Y-Xk-oiQ"/>
+                                    <constraint firstItem="mYo-6a-Vyu" firstAttribute="centerX" secondItem="6vv-AG-tIa" secondAttribute="centerX" id="ccv-ni-yfQ"/>
+                                    <constraint firstItem="mYo-6a-Vyu" firstAttribute="centerY" secondItem="6vv-AG-tIa" secondAttribute="centerY" id="eXg-Ij-AQ7"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações da sua compra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91m-xU-s0D">

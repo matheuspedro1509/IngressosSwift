@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func buscaTextField(tipoTextField: TipoTextField, completion: (_ textFieldSolicitado: UITextField)-> Void){
+        for textField in textFields{
+            if let textFieldAtual =  TipoTextField(rawValue : textField.tag){
+                if textFieldAtual == tipoTextField{
+                    completion(textField)
+                }
+            }
+        }
+    }
 
     @IBAction func botaoComprar(_ sender: UIButton) {
         let textFieldPreenchidos = ValidaFormulario().verificaTextField(textFields: textFields)
@@ -43,10 +53,14 @@ class ViewController: UIViewController {
     }
    
     @IBAction func textFieldCep(_ sender: UITextField) {
-        
-        guard let cep = sender.text else {return}
-        LocalizacaoConsultaApi().consultaViaCepApi(cep: cep, sucesso: { (localizacao) in
-            print(localizacao)
+    
+        LocalizacaoConsultaApi().consultaViaCepApi(cep: sender.text!, sucesso: { (localizacao) in
+            self.buscaTextField(tipoTextField: .endereco, completion: { (textFieldEndereco) in
+                textFieldEndereco.text =  localizacao.logradouro
+            })
+            self.buscaTextField(tipoTextField: .bairro, completion: { (textFieldBairro) in
+                textFieldBairro.text = localizacao.bairro
+            })
         }) { (error) in
             print(error)
         }
