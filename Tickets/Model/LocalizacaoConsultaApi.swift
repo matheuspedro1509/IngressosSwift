@@ -11,17 +11,18 @@ import Alamofire
 
 class LocalizacaoConsultaApi: NSObject {
     
-    func consultaViaCepApi(cep:String){
-        Alamofire.request("https://viacep.com.br/ws/04101300/json/", method: .get).validate().responseJSON { (response) in
+    func consultaViaCepApi(cep:String, sucesso : @escaping(_ localizacao : Localizacao) -> Void, falha: @escaping(_ erro: Error) -> Void ){
+        Alamofire.request("https://viacep.com.br/ws/\(cep)/json/", method: .get).validate().responseJSON { (response) in
             switch response.result{
             case .success:
                 
-                if let resultado =  response.result as? Dictionary<String,String>{
-                    
+                if let resultado =  response.result.value as? Dictionary<String,String>{
+                    let localizacao = Localizacao.init(resultado)
+                    sucesso(localizacao)
                 }
                 break
             case .failure:
-                
+                falha(response.result.error!)
                 break
             }
         }

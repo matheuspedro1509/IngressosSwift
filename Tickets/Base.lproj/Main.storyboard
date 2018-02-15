@@ -151,7 +151,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textFieldCep:" destination="BYZ-38-t0r" eventType="editingChanged" id="lYL-wu-DSw"/>
+                                                    <action selector="textFieldCep:" destination="BYZ-38-t0r" eventType="editingChanged" id="PKC-to-C3U"/>
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dck-TG-wx5">

@@ -18,5 +18,8 @@ class Localizacao: NSObject {
     
     init(_ dicionario : Dictionary<String,String>){
         logradouro = dicionario["logradouro"] ?? ""
+        bairro = dicionario["bairro"] ?? ""
+        cidade = dicionario["localidade"] ?? ""
+        uf = dicionario["uf"] ?? ""
     }
 }

@@ -43,7 +43,13 @@ class ViewController: UIViewController {
     }
    
     @IBAction func textFieldCep(_ sender: UITextField) {
-      
+        
+        guard let cep = sender.text else {return}
+        LocalizacaoConsultaApi().consultaViaCepApi(cep: cep, sucesso: { (localizacao) in
+            print(localizacao)
+        }) { (error) in
+            print(error)
+        }
     }
     
     
