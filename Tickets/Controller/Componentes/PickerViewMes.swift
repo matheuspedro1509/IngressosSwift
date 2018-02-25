@@ -12,7 +12,7 @@ protocol PickerViewSelecionado {
     func mesSelecionado(mes:String)
 }
 
-class PickerView: NSObject , UIPickerViewDelegate, UIPickerViewDataSource{
+class PickerViewMes: NSObject , UIPickerViewDelegate, UIPickerViewDataSource{
     
     var delegate : PickerViewSelecionado?
     

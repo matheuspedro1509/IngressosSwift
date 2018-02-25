@@ -10,12 +10,13 @@ import UIKit
 
 
 
-class ViewController: UIViewController, PickerViewSelecionado {
+class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSelecionado{
 
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet var textFields: [UITextField]!
-    var pickerMes = PickerView()
+    var pickerMes = PickerViewMes()
     @IBOutlet weak var scrollPrincipal: UIScrollView!
+    var pickerAno = PickerViewAno()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class ViewController: UIViewController, PickerViewSelecionado {
         NotificationCenter.default.addObserver(self, selector: #selector(aumentarTela(notification:)), name: .UIKeyboardWillShow, object: nil)
         
         pickerMes.delegate = self
+        pickerAno.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,11 +84,24 @@ class ViewController: UIViewController, PickerViewSelecionado {
         
     }
     
+    @IBAction func textFieldAno(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerAno
+        pickerView.dataSource = pickerAno
+        sender.inputView = pickerView
+    }
     
-        //implementando o delegate
+    
+        //implementando os delegates
     func mesSelecionado(mes: String) {
         self.buscaTextField(tipoTextField: .mesVencimento) { (textFieldMes) in
             textFieldMes.text = mes
+        }
+    }
+    
+    func anoSelecionado(ano: String) {
+        self.buscaTextField(tipoTextField: .AnoVencimento) { (textFieldAno) in
+            textFieldAno.text = ano
         }
     }
     
