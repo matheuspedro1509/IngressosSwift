@@ -91,6 +91,21 @@ class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSel
         sender.inputView = pickerView
     }
     
+    @IBAction func textFieldCodigoSeg(_ sender: UITextField) {
+        guard let texto = sender.text else { return }
+        
+        if texto.characters.count > 3 {
+            let cod = texto.suffix(3)
+            self.buscaTextField(tipoTextField: .CodSeguranca, completion: { (textFieldCod) in
+                textFieldCod.text = String(cod)
+            })
+        }else{
+            self.buscaTextField(tipoTextField: .CodSeguranca, completion: { (textFieldCod) in
+                textFieldCod.text = texto
+            })
+        }
+    }
+    
     
         //implementando os delegates
     func mesSelecionado(mes: String) {
