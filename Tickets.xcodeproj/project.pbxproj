@@ -15,6 +15,7 @@
 		71BAFA362029E00A00D3073E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA342029E00A00D3073E /* Main.storyboard */; };
 		71BAFA382029E00B00D3073E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA372029E00B00D3073E /* Assets.xcassets */; };
 		71BAFA3B2029E00B00D3073E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA392029E00B00D3073E /* LaunchScreen.storyboard */; };
+		71C4688B20436CFA00680E1D /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4688A20436CFA00680E1D /* PickerView.swift */; };
 		CAF6FB502E3DA73557462187 /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		71BAFA372029E00B00D3073E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BAFA3A2029E00B00D3073E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71BAFA3C2029E00B00D3073E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71C4688A20436CFA00680E1D /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		CBDF4B81DD65C98BA4973BD4 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
 		EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 		718FE657202C82A600926269 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71C4688920436CCD00680E1D /* Componentes */,
 				71BAFA322029E00A00D3073E /* ViewController.swift */,
 			);
 			path = Controller;
@@ -111,6 +114,14 @@
 				71BAFA3C2029E00B00D3073E /* Info.plist */,
 			);
 			path = Tickets;
+			sourceTree = "<group>";
+		};
+		71C4688920436CCD00680E1D /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				71C4688A20436CFA00680E1D /* PickerView.swift */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 			files = (
 				71BAFA332029E00A00D3073E /* ViewController.swift in Sources */,
 				718A53402035B7EE00A89B10 /* LocalizacaoConsultaApi.swift in Sources */,
+				71C4688B20436CFA00680E1D /* PickerView.swift in Sources */,
 				718FE659202C836400926269 /* ValidaFormulario.swift in Sources */,
 				718A533E2035B7A000A89B10 /* Localizacao.swift in Sources */,
 				71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */,

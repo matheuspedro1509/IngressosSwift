@@ -228,6 +228,9 @@
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="textFieldEmFoco:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="oyP-14-gio"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhR-tp-RcN">
                                                                         <rect key="frame" x="86" y="0.0" width="85.5" height="30"/>
@@ -335,6 +338,7 @@
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="imgBanner" destination="JNj-fT-8qz" id="YvM-Li-qir"/>
+                        <outlet property="scrollPrincipal" destination="KX1-7l-CnZ" id="XKF-Nf-eWV"/>
                         <outletCollection property="textFields" destination="KeF-Ow-ZPr" collectionClass="NSMutableArray" id="8s4-FU-7wp"/>
                         <outletCollection property="textFields" destination="D73-Ej-8qD" collectionClass="NSMutableArray" id="AZF-Rz-DmT"/>
                         <outletCollection property="textFields" destination="hXV-iQ-Gg7" collectionClass="NSMutableArray" id="5Yu-gg-gDj"/>

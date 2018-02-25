@@ -10,11 +10,12 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PickerViewSelecionado {
 
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet var textFields: [UITextField]!
-    
+    var pickerMes = PickerView()
+    @IBOutlet weak var scrollPrincipal: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +23,18 @@ class ViewController: UIViewController {
         self.imgBanner.layer.cornerRadius = 10
         self.imgBanner.layer.masksToBounds = true
  
+        NotificationCenter.default.addObserver(self, selector: #selector(aumentarTela(notification:)), name: .UIKeyboardWillShow, object: nil)
+        
+        pickerMes.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func aumentarTela(notification: Notification){
+        self.scrollPrincipal.contentSize = CGSize(width: self.scrollPrincipal.frame.width, height: self.scrollPrincipal.frame.height + 750)
     }
     
     func buscaTextField(tipoTextField: TipoTextField, completion: (_ textFieldSolicitado: UITextField)-> Void){
@@ -66,6 +74,21 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func textFieldEmFoco(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerMes
+        pickerView.dataSource = pickerMes
+        sender.inputView = pickerView
+        
+    }
+    
+    
+        //implementando o delegate
+    func mesSelecionado(mes: String) {
+        self.buscaTextField(tipoTextField: .mesVencimento) { (textFieldMes) in
+            textFieldMes.text = mes
+        }
+    }
     
     
 }
