@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import Money
 
 
-
-class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSelecionado{
+class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSelecionado, PickerViewNumeroDeParcela{
 
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet var textFields: [UITextField]!
     var pickerMes = PickerViewMes()
     @IBOutlet weak var scrollPrincipal: UIScrollView!
     var pickerAno = PickerViewAno()
+    var pickerParcela = PickerViewNumParcela()
+    var valorIngresso : BRL  = 199.00
+    @IBOutlet weak var labelTotal: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,7 @@ class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSel
         
         pickerMes.delegate = self
         pickerAno.delegate = self
+        pickerParcela.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,6 +111,13 @@ class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSel
         }
     }
     
+    @IBAction func pickerViewParcela(_ sender: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = pickerParcela
+        pickerView.dataSource = pickerParcela
+        sender.inputView = pickerView
+    }
+    
     
         //implementando os delegates
     func mesSelecionado(mes: String) {
@@ -120,6 +132,13 @@ class ViewController: UIViewController, PickerViewSelecionado , PickerViewAnoSel
         }
     }
     
+    func parcelaSelecionada(numParcela: String) {
+        self.buscaTextField(tipoTextField: .NumeroParcela) { (textFieldParcela) in
+            textFieldParcela.text = "\(numParcela)x"
+            let calculoDaParcela = "\(valorIngresso/Int(numParcela)!)"
+            labelTotal.text = String.init(format: "%@x %@ (ou R$199,00 à vista)", numParcela, calculoDaParcela)
+        }
+    }
     
 }
 

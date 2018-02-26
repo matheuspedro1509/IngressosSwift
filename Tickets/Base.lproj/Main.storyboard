@@ -267,11 +267,14 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="numero de parcelas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lic-qE-gu7">
+                                            <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="numero de parcelas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lic-qE-gu7">
                                                 <rect key="frame" x="0.0" y="794" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="pickerViewParcela:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Xos-bS-RSf"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Confirmação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-kW-Ioz">
                                                 <rect key="frame" x="0.0" y="829" width="343" height="19"/>
@@ -289,9 +292,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eN-no-bIg">
                                                 <rect key="frame" x="0.0" y="863" width="343" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12x R$16,58 (ou R$199,90 à vista) " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgT-Ch-JtE">
-                                                        <rect key="frame" x="0.0" y="9" width="343" height="20.5"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12x R$16,58 (ou R$199,90 à vista) " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JgT-Ch-JtE">
+                                                        <rect key="frame" x="48" y="9.5" width="247.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -300,6 +302,8 @@
                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="K26-lb-Ll3"/>
+                                                    <constraint firstItem="JgT-Ch-JtE" firstAttribute="centerY" secondItem="2eN-no-bIg" secondAttribute="centerY" id="WWV-00-fOH"/>
+                                                    <constraint firstItem="JgT-Ch-JtE" firstAttribute="centerX" secondItem="2eN-no-bIg" secondAttribute="centerX" id="ZQj-Kx-GUc"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHA-Yz-FCp">
@@ -344,6 +348,7 @@
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="imgBanner" destination="JNj-fT-8qz" id="YvM-Li-qir"/>
+                        <outlet property="labelTotal" destination="JgT-Ch-JtE" id="Zuh-am-JzX"/>
                         <outlet property="scrollPrincipal" destination="KX1-7l-CnZ" id="XKF-Nf-eWV"/>
                         <outletCollection property="textFields" destination="KeF-Ow-ZPr" collectionClass="NSMutableArray" id="8s4-FU-7wp"/>
                         <outletCollection property="textFields" destination="D73-Ej-8qD" collectionClass="NSMutableArray" id="AZF-Rz-DmT"/>

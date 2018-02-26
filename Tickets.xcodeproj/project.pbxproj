@@ -17,6 +17,7 @@
 		71BAFA3B2029E00B00D3073E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFA392029E00B00D3073E /* LaunchScreen.storyboard */; };
 		71C4688B20436CFA00680E1D /* PickerViewMes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4688A20436CFA00680E1D /* PickerViewMes.swift */; };
 		71C4688E2043746200680E1D /* PickerViewAno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4688D2043746200680E1D /* PickerViewAno.swift */; };
+		71C46890204383B900680E1D /* PickerViewNumParcela.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4688F204383B900680E1D /* PickerViewNumParcela.swift */; };
 		CAF6FB502E3DA73557462187 /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		71BAFA3C2029E00B00D3073E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71C4688A20436CFA00680E1D /* PickerViewMes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewMes.swift; sourceTree = "<group>"; };
 		71C4688D2043746200680E1D /* PickerViewAno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewAno.swift; sourceTree = "<group>"; };
+		71C4688F204383B900680E1D /* PickerViewNumParcela.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewNumParcela.swift; sourceTree = "<group>"; };
 		CBDF4B81DD65C98BA4973BD4 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
 		EB4481969CFFBB638C070C4A /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 			children = (
 				71C4688A20436CFA00680E1D /* PickerViewMes.swift */,
 				71C4688D2043746200680E1D /* PickerViewAno.swift */,
+				71C4688F204383B900680E1D /* PickerViewNumParcela.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -241,12 +244,16 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CPF-CNPJ-Validator/CPF_CNPJ_Validator.framework",
 				"${BUILT_PRODUCTS_DIR}/CreditCardValidator/CreditCardValidator.framework",
+				"${BUILT_PRODUCTS_DIR}/Money/Money.framework",
+				"${BUILT_PRODUCTS_DIR}/ValueCoding/ValueCoding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPF_CNPJ_Validator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardValidator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Money.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ValueCoding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -266,6 +273,7 @@
 				718FE659202C836400926269 /* ValidaFormulario.swift in Sources */,
 				718A533E2035B7A000A89B10 /* Localizacao.swift in Sources */,
 				71BAFA312029E00A00D3073E /* AppDelegate.swift in Sources */,
+				71C46890204383B900680E1D /* PickerViewNumParcela.swift in Sources */,
 				71C4688E2043746200680E1D /* PickerViewAno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,7 @@ enum TipoTextField: Int {
     case mesVencimento = 8
     case AnoVencimento = 9
     case CodSeguranca = 10
+    case NumeroParcela = 11
 }
 
 class ValidaFormulario: NSObject {
